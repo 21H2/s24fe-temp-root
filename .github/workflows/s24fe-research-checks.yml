@@ -1,0 +1,43 @@
+name: S24 FE research consistency
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reports/**'
+      - 'tools/verify_reports.py'
+      - 'tests/test_verify_reports.py'
+      - '.github/workflows/s24fe-research-checks.yml'
+  pull_request:
+    paths:
+      - 'reports/**'
+      - 'tools/verify_reports.py'
+      - 'tests/test_verify_reports.py'
+      - '.github/workflows/s24fe-research-checks.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify research reports (no payload execution)
+        run: |
+          python tools/verify_reports.py \
+            --reports reports \
+            --json artifacts/compatibility-summary.json \
+            --markdown artifacts/compatibility-summary.md
+          cat artifacts/compatibility-summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: s24fe-research-consistency
+          path: artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
