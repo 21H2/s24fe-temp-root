@@ -1,0 +1,10 @@
+Device: SM-S721B
+Target firmware: S721BXXUEEZIF
+Baseline firmware: S721BXXSCDZF3
+Upstream commit:
+6e3223e689688540060ddd97a0927e927bfed207
+Baseline payload SHA256:
+266b9bbfd465c58a645fd20633c8ac8de91317aa01d349cb5a86a1b25d57db16  third_party/root-my-galaxy/build/r12s-S721BXXSCDZF3/cve-2026-43499-app.release.so
+Build result: SUCCESS
+One UI 9 compatibility: UNVERIFIED
+Hardware testing: NOT PERFORMED
