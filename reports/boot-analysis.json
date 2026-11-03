@@ -1,0 +1,22 @@
+{
+  "target_device": "Samsung Galaxy S24 FE / SM-S721B",
+  "expected_firmware_from_user": "S721BXXUEEZIF",
+  "expected_kernel_version_from_user": "6.1.162-android14-11",
+  "warning": "An image alone does not verify the phone firmware identity or exploit viability.",
+  "boot_format": "LZ4 frame",
+  "boot_header_version": 4,
+  "downloaded_file_sha256": "320d1b5681d86f8ec2be68d0367208f57610ca3cb831da7f4a84e55b2312d4af",
+  "boot_image_sha256": "b29d72a0ad690783a96e5fbb8cf963051642d644859cc52de17c239d52be6711",
+  "kernel_size_bytes": 38832640,
+  "kernel_sha256": "4cd25ebce602a6169f9e08bb8e74b98db05483d3da07c2ae4bbb0236ef485235",
+  "btf_candidate_count": 1,
+  "btf_candidates": [
+    {
+      "offset": 25748552,
+      "end": 31745598,
+      "size": 5997046
+    }
+  ],
+  "btf_sha256": "753061563593e10891be8d46fa121b0b49e2cf9c5fd4bdb720044b7e109e8bc7",
+  "build_status": "offline inspection only (unless separate CI build step succeeds)"
+}

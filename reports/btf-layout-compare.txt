@@ -1,0 +1,29 @@
+
+=== file_operations ===
+_size: 0x110 -> 0x110 [SAME]
+unlocked_ioctl: 0x50 -> 0x50 [SAME]
+compat_ioctl: 0x58 -> 0x58 [SAME]
+mmap: 0x60 -> 0x60 [SAME]
+open: 0x70 -> 0x70 [SAME]
+release: 0x80 -> 0x80 [SAME]
+splice_read: 0xc8 -> 0xc8 [SAME]
+show_fdinfo: 0xe0 -> 0xe0 [SAME]
+
+=== task_struct ===
+usage: 0x40 -> 0x40 [SAME]
+prio: 0x84 -> 0x84 [SAME]
+normal_prio: 0x8c -> 0x8c [SAME]
+sched_task_group: 0x348 -> 0x348 [SAME]
+pi_lock: 0x924 -> 0x924 [SAME]
+pi_waiters: 0x938 -> 0x938 [SAME]
+pi_top_task: 0x948 -> 0x948 [SAME]
+pi_blocked_on: 0x950 -> 0x950 [SAME]
+
+=== page ===
+_size: 0x40 -> 0x40 [SAME]
+compound_head: 0x8 -> N/A [MISSING / UNALIGNED]
+slab_cache: 0x18 -> N/A [MISSING / UNALIGNED]
+page_type: 0x30 -> N/A [MISSING / UNALIGNED]
+
+Changed: 0
+Missing / unaligned: 3

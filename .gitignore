@@ -1,0 +1,12 @@
+
+# Samsung firmware analysis
+/out/
+/firmware/
+*.tar.md5
+*.img.lz4
+*.img
+/out/
+/firmware/
+*.img
+*.img.lz4
+*.tar.md5

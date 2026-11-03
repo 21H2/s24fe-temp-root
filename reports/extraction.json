@@ -1,0 +1,12 @@
+{
+  "model": "SM-S721B",
+  "pda": "S721BXXUEEZIF",
+  "source": "Samsung firmware AP tar",
+  "extracted": {
+    "member": "boot.img.lz4",
+    "size_bytes": 22422515,
+    "sha256": "320d1b5681d86f8ec2be68d0367208f57610ca3cb831da7f4a84e55b2312d4af",
+    "AP_filename": "AP_S721BXXUEEZIF_S721BXXUEEZIF_MQB115064592_REV00_user_low_ship_MULTI_CERT_meta_OS17.tar.md5"
+  },
+  "warning": "Extracting the boot image does NOT provide root or prove OneOS compatibility."
+}

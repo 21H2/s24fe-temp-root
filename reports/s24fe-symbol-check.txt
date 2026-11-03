@@ -1,0 +1,11 @@
+Kernel base: 0xffffffc008000000
+
+_text: 0x0
+start_kernel: 0x1e60434
+init_task: 0x22ff600
+noop_llseek: 0x3a1db0
+generic_file_splice_read: 0x3efdbc
+call_usermodehelper_exec_work: 0xd4584
+worker_thread: 0xdbe18
+root_task_group: 0x2515cc0
+selinux_state: 0x25ea4a8

@@ -1,0 +1,1 @@
+out/sboot.bin: data

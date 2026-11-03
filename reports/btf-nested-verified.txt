@@ -1,0 +1,3 @@
+page.compound_head: 0x8 [MATCH]
+page.page_type: 0x30 [MATCH]
+slab.slab_cache: 0x18 [MATCH]
