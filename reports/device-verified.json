@@ -1,0 +1,12 @@
+{
+  "model": "SM-S721B",
+  "codename": "r12s",
+  "firmware": "S721BXXUEEZIF",
+  "android": 17,
+  "kernel": "6.1.162-android14-11",
+  "fingerprint": "samsung/r12sxins/r12s:17/CP2A.260605.016/S721BXXUEEZIF:user/release-keys",
+  "page_size": 4096,
+  "selinux": "Enforcing",
+  "trace_event_id": 106,
+  "temporary_root_verified": false
+}
